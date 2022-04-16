@@ -1,0 +1,718 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;  
+}
+// Make the total height and width of the elements includes padding and borders.
+html,
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+overflow: hidden;
+// Make the layout default.
+font-family: 'raleway', sans-serif, 'Helvetica';
+font-weight: 400;
+font-size: 0.95em;
+font-style: normal;
+// Use the raleway and Helvetica font for the most texts.
+}
+
+.body_wrapper {
+  // Change the background-color similar to light-gray.
+  background-color: #f0f0f0 !important ;
+    .nav_container {
+        .nav-pills {
+          .help_block {
+            width: auto;
+            .help {              
+              color: black !important;
+              // Force the help texts can be black color.
+              img {
+                width: 2em;  
+                margin-right: 0.4em;
+              // Adjust the help icon position.                         
+              }
+            }
+          }
+          .sign_in-block {
+            .sign_in {              
+              color: black !important;
+              // Force the SIGN IN texts can be black color.
+              img {
+                width: 2em;  
+                margin-bottom: 1.7em;           
+                margin-right: 1.1em; 
+                // Adjust the member icon position.          
+               }
+            }  
+          }
+          .language_choice {
+            .language_choice-options {                 
+              img {
+                width: 1.6em;  
+                margin-bottom: 0.4em;           
+                margin-right: 1.1em;  
+                // Adjust the flag icon position.         
+               }
+               .EN {
+                color: black !important;  
+                // Force the EN texts can be black color.                              
+               }
+            }
+            .dropdown-menu {              
+              margin-top: -4.1em;
+              margin-left: 1em;
+              min-width: 5.4em;
+              border-radius: 0em;              
+              box-shadow: 1.2px 1.2px 0px 1.2px #b4b4b4;
+              // Adjust the dropdown menu position, and shadow. 
+                img {                                    
+                    width: 0.8em;
+                    // Force the dropdown-marker can be more smaller.               
+                }
+            }
+          }
+        }  
+    }
+    @media screen and (max-width: 992px) {
+      .nav_container {
+        .nav-pills {
+          .help_block {
+            width: auto;
+            .help {    
+              img {
+                width: 2em;  
+                
+              // Adjust the help icon position.                         
+              }
+            }
+          }
+          .sign_in-block {
+            .sign_in {  
+              padding-top: 0.75em;
+              // Fit the 992px position. 
+              img {
+                width: 2em;  
+                
+                // Adjust the member icon position.          
+               }
+            }  
+          }
+          .language_choice {
+            .language_choice-options { 
+              padding-top: 0.75em;
+              // Fit the 992px position.                 
+              img {
+                width: 1.6em;                  
+                // Adjust the flag icon position.         
+               }
+            }
+            .dropdown-menu { 
+              // Adjust the dropdown menu position. 
+                img {                                    
+                    width: 0.8em;
+                    // Force the dropdown-marker can be more smaller.               
+                }
+            }
+          }
+        }  
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .nav_container {
+        .nav-pills {
+          .help_block {
+            width: auto;
+            .help {              
+              color: #f0f0f0  !important;
+              // Force the help texts can be #f0f0f0  color.
+              img {
+                width: 3em;                  
+              // Adjust the help icon size in 768px.                         
+              }
+            }
+          }
+          .sign_in-block {
+            .sign_in {              
+              color: #f0f0f0 !important;
+              // Force the SIGN IN texts can be #f0f0f0 color.
+              img {
+                width: 3em;                  
+                // Adjust the member icon size in 768px.          
+               }
+            }  
+          }
+          .language_choice {
+            margin-top: 0.3em;
+            margin-left: -0.9em;
+            .language_choice-options {                                            
+              img {
+                width: 2.5em;                  
+                // Adjust the flag icon size in 768px.         
+               }
+               .EN {
+                color: #f0f0f0 !important;
+                margin-left: -2em;  
+                // Force the EN texts can be #f0f0f0 color.                              
+               }
+            }
+            .dropdown-menu {                             
+              margin-top: -5em;
+              // Adjust the dropdown menu position. 
+            }
+          }
+        }  
+      }    
+    }
+    // Add step 2 the check icon in step disale-1, noted in HTML.
+    #shopping_cart-process {
+      // Require the transition.css, and usage of animation.
+      animation: 7s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+      padding-top: 0.92em;
+      // Adjust the shopping_cart-process position. 
+      .shopping_process-container {
+        .step_disable {        
+          .step_disable-1 {          
+            background: #1BA1E2 !important;
+            color: white;
+            width: 40px;
+            height: 40px;
+            font-size: 1.4em;
+            // Change the rounded-circle color and adjust the size.           
+          }
+          .step_disable-2 {          
+            background: #1BA1E2 !important;
+            color: white;
+            width: 40px;
+            height: 40px;
+            font-size: 1.4em; 
+            // Change the rounded-circle color and adjust the size.         
+          }
+          &>p {
+            margin-top: 0.5em;
+            // Adjust the My Data and Payment position.
+          }
+        }
+        .progress_rate-lg {
+          font-weight: bolder;
+          // Make progress font weight bolder.                       
+        }    
+      }
+    }
+    // Change the step icon of shopping process in RWD.
+    @media screen and (max-width: 992px) {
+      #shopping_cart-process {
+        padding-top: 5em;
+        .shopping_process-container {
+          .step_disable { 
+            .step_disable-1 {   
+              text-align: center;            
+              font-size: 2em;
+
+              .step_2-check {
+                width: 1.5em;
+                margin-top: -0.3em;
+              }
+              // Change the rounded-circle color and adjust the size.           
+              // Add the step check img here and in HTML, and use RWD.
+            }
+            .step_disable-2 {  
+              text-align: center; 
+              font-size: 2em; 
+              // Change the rounded-circle color and adjust the size.         
+            }
+          } 
+        }   
+      } 
+    }
+    @media screen and (max-width: 768px) {
+      #shopping_cart-process {
+        .shopping_process-container {
+          .step_disable { 
+            margin: 0 10vmin;
+            .step_disable-1 {                 
+              text-align: center;            
+              font-size: 2em;
+              border: solid #006EAF   1px;
+
+              .step_2-check {                
+                margin-left: -0.1em;
+              }
+              // Change the rounded-circle color and adjust the size.           
+              // Adjust the step check img position.
+            }
+            .step_disable-2 {  
+              text-align: center; 
+              font-size: 2em;
+              border: solid #006EAF   1px; 
+              // Change the rounded-circle color and adjust the size.         
+            }
+          }
+          .progress_rate-lg {
+            display: none;
+            // Make progress none the display.                       
+          } 
+        }   
+      } 
+    }
+  #my_data {
+    .my_data-container {
+      width: 100vmin !important;
+      border-radius: 0 !important;
+      border: solid black 2px;
+      box-shadow: 1.5px 1.2px 0px 1.2px #b4b4b4;
+      // Make My Data the main section fit the designs, also add shadow.
+        .login_guide-text {
+          h2 {
+            font-weight: bolder;
+            // Make My Data font bolder.
+            @font-face {
+              font-family: 'Helvetica';              
+              src: url('../fonts/Helvetica.woff') format("woff"),
+                     url('../fonts/Helvetica.ttf') format("truetype"),
+                     url('../fonts/Helvetica.eot') format("embedded-opentype");
+                    // Require the Helvetica from local host.
+            }
+          }
+          .login_guide-text, h6 {
+            font-size: xx-small;
+            padding-right: 0.8em;
+            // Make "Please enter..." font-size smallest.
+          }
+        }
+        .name_input-container {
+          padding-right: 4.3em;
+          // adjust position.
+          .given_name-block {
+            .given_name {
+              p {
+                font-size: smaller;
+                // Make "Name" font smaller.
+                @font-face {
+                  font-family: 'Helvetica';
+                  src: url('../fonts/Helvetica.woff') format("woff"),
+                         url('../fonts/Helvetica.ttf') format("truetype"),
+                         url('../fonts/Helvetica.eot') format("embedded-opentype");
+                         // Require the Helvetica from local host.
+                }
+              }
+              input {
+                width: 19.5em !important;
+                height: 2.4em;
+                border: solid #1BA1E2 0.2em !important;
+                margin-top: -1.3em;
+                // Change the input width and heigh, and border color, position.
+              }
+              input.valid {
+                border:2px solid green !important;
+                // When the name key in the length, change the color.
+              }
+              input.invalid { 
+                border:2px solid red !important;
+                // When the name key in the wrong length, change the color.
+              }   
+            }
+          }
+          .family_name-block {
+            .family_name {
+              p {
+                font-size: smaller;
+                // Make "Name" font smaller.
+                @font-face {
+                  font-family: 'Helvetica';
+                  src: url('../fonts/Helvetica.woff') format("woff"),
+                         url('../fonts/Helvetica.ttf') format("truetype"),
+                         url('../fonts/Helvetica.eot') format("embedded-opentype");
+                         // Require the Helvetica from local host.
+                }
+              }
+              input {
+                width: 19.5em !important;
+                height: 2.4em;
+                border: solid #1BA1E2 0.2em !important;
+                margin-top: -1.3em;
+                // Change the input width and heigh, and border color, position.
+              }
+              input.valid {
+                border:2px solid green !important;
+                // When the name key in the length, change the color.
+              }
+              input.invalid { 
+                border:2px solid red !important;
+                // When the name key in the wrong length, change the color.
+              }
+            }
+          }          
+        }
+        .continue_button-container {  
+          margin-right: -10em;    
+          
+          // Adjust the whole button position.  
+        .continue_button-active {            
+          width: 8.7em;
+          background-color: #1BA1E2;
+          color: white;
+          border: solid #006EAF 0.13em;
+          border-radius: 0.4em;
+          box-shadow: 2px 3px #b4b4b4;          
+          padding-left:  1.6em;
+          // Adjust the button width, color, border, border-radius and position.
+          &:hover i {
+            margin-left: -0.6em;
+            // Use hover make the <i> move left.
+          }
+
+          &:hover a {
+            margin-left: 0.2em;
+            // Use hover make the <a> move left.
+        }
+  
+          a {
+            display: inline-block;
+            color: white;
+            font-size: 6px;
+            margin-left: -2em;
+            padding: 1.1em 1em;
+            transition: 0.3s;
+            
+            // Make the <a> become the button, and fit the position, also include the animation.
+          }
+          
+          i {
+            padding-right: 0.2em;              
+            transition: 0.5s;
+            // Make <i> padding right and transition timing.
+          }
+          // .continue {           
+          //   // opacity: 0;
+            
+          // }  
+        } 
+      } 
+    }
+  }
+  // The RWD of My data.
+  @media screen and (max-width: 992px) {
+    .my_data-wrapper {   
+      .my_data-container {
+        margin-left: 0em !important;
+        .continue_button-container {
+          margin-top: 1em;
+          margin-left: -50px;
+          // Make button move in right position.
+        }
+      }  
+    }
+    // Change the continue button position in 992px.
+  }
+  @media screen and (max-width: 768px) {
+    .my_data-wrapper {    
+      .my_data-container {      
+        .continue_button-container {
+          margin-top: 1em;
+          margin-left: 1em;
+          // Adjust the button.        
+        }
+      }  
+    }
+    // Change the continue button position in 768px.
+  }
+  @media screen and (max-width: 576px) {
+    .my_data-wrapper {    
+      .my_data-container {      
+        .continue_button-container {
+          margin-top: 0em;
+          margin-left: 0em;        
+        }
+      }
+    }
+    // Change the continue button position in 576px.  
+  }
+ 
+  #step_2, .step_2-wrapper {
+    .step_2-container {
+      width: 100vmin !important;
+      height: 50vh;
+      border-radius: 0 !important;
+      border: solid black 2px;
+      box-shadow: 1.5px 1.2px 0px 1.2px #b4b4b4;
+      // Make step_2 the content fit the designs, also add shadow.
+        .step_2-text {
+          h2 {
+            // Payment
+            font-size: 2.6em;
+            font-weight: bolder;
+            // Make Payment bolder.
+            @font-face {
+              font-family: 'Helvetica';              
+              src: url('../fonts/Helvetica.woff') format("woff"),
+                     url('../fonts/Helvetica.ttf') format("truetype"),
+                     url('../fonts/Helvetica.eot') format("embedded-opentype");
+                    // Require the Helvetica from local host.
+            }
+            .step_2-guide-text, h6 {
+              font-size: 200vmin;
+              padding-right: 0.8em;
+              // Make "After making the..." font-size smallest
+            }
+          }  
+        }
+        .step_2-content { 
+          .payment_container {             
+            // Make the border solid and shadow, adjust position.
+            .payment_info {
+              margin-left: 9em;           
+              width: 34.4em; 
+              border: solid #f2f2f2 1px;
+              .credit_card-block {
+                margin-left: 2em;
+                .credit_card {
+                  width: 4em;
+                  // Change the credit_card svg size.
+                }
+                h4 {
+                  // Credit card texts.
+                  font-size: 1.6em;
+                  font-weight: bolder;
+                  // Adjust font size.
+                  @font-face {
+                    font-family: 'Helvetica';              
+                    src: url('../fonts/Helvetica.woff') format("woff"),
+                           url('../fonts/Helvetica.ttf') format("truetype"),
+                           url('../fonts/Helvetica.eot') format("embedded-opentype");
+                          // Require the Helvetica from local host.
+                  }
+                }
+              }
+              .secure_process-container {
+                .secure_process-info {
+                  .secure_process {                    
+                    h6 {               
+                      // Texts the "You will be..." in <h6> tag.
+                      font-size: 0.93em;
+                      letter-spacing: 0.08em;
+                      text-align: center;
+                      // Adjust the texts to fit the designs.
+                      @font-face {
+                        font-family: 'Helvetica';              
+                        src: url('../fonts/Helvetica.woff') format("woff"),
+                               url('../fonts/Helvetica.ttf') format("truetype"),
+                               url('../fonts/Helvetica.eot') format("embedded-opentype");
+                              // Require the Helvetica from local host.
+                      }
+                    }
+                  }                
+                }
+                .payment_cards-container {
+                  margin-left: 2em;
+                  // The last two cards img.
+                  .master_card-box {
+                    img {
+                      width: 4.2em;
+                      // Adjust the master card size.
+                    }
+                  }
+                  .visa_card-box {
+                    img {
+                      width: 4.2em;
+                      // Adjust the visa card size.
+                    }
+                  }
+                }
+              }
+            }    
+          }              
+          // Here's the arrow animations in index.html.
+          .continue_button-container {  
+            margin-right: -10em; 
+            // Adjust the whole button position.
+          
+            .continue_button-active {            
+              width: 8.7em;
+              background-color: #1BA1E2;
+              color: white;
+              border: solid #006EAF 0.13em;
+              border-radius: 0.4em;
+              box-shadow: 2px 3px #b4b4b4;          
+              padding-left:  1.6em;
+              // Adjust the button width, color, border, border-radius and position.
+              &:hover i {
+                margin-left: -0.6em;
+                // Use hover make the <i> move right.
+              }
+  
+              &:hover a {
+                margin-left: 0.2em;
+                // Use hover make the <a> move right.
+              }  
+            }            
+ 
+        }
+      }
+    }                    
+  } 
+  // Here's the step_2.html of different to index.html.
+  .step_2-group {
+    padding: 1.1em;
+  // Change the step 2, back and pay button size.
+  .step_2-submit-l-container:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 1.2s;
+    // Use hover to change the color, may left the regret.    
+  } 
+    .step_2-submit-r-container:hover {
+      background-color: green;
+      color: white;
+      transition-duration: 1.2s;
+    // Use hover to change the color, may get good stuffs. 
+  } 
+    // The "Back" and "Pay" buttons.
+    button {
+      width: 8em !important;
+      background-color: #1BA1E2;
+      color: white;
+      border: solid #006EAF 0.13em;
+      border-radius: 0.4em;
+      box-shadow: 2px 3px #b4b4b4;          
+      
+      // Adjust the button width, color, border, border-radius and position in step_2.html.
+    }
+    // Left the container to contain the back button, compose with the <a>, <i> tags.
+    .step_2-submit-l-container { 
+      height: 3em;
+      margin-left: 1em;
+      .step_2-submit-l {                                    
+        a {
+          color: white;
+          font-size: 1.1em !important;
+          font-weight: 400;          
+          font-style: normal;
+          padding-left: 0.8em;
+          // Make the <a> become the button, and fit the position, also include the animation.
+        }
+        i {          
+          color: white;
+        }
+      }  
+    }
+        // Left the container to contain the back button, compose with the <a>, <i> tags.
+        .step_2-submit-r-container { 
+          height: 3em;
+          margin-right: 4em;
+          .step_2-submit-r {                                    
+            a {
+              color: white;
+              font-size: 1.1em !important;
+              font-weight: 400;          
+              font-style: normal;
+              padding-right: 0.8em;
+              // Make the <a> become the button, and fit the position, also include the animation.
+            }
+            i {              
+              color: white;
+            }
+          }  
+        }
+
+  }
+   // The RWD of step_2.html, Payment info .
+   @media screen and (max-width: 1900px) {
+    .step_2-wrapper {
+      .step_2-content { 
+          .payment_container {
+            margin-left: 0 !important;
+            .payment_info {
+              .credit_card-block {
+                .credit_card-box {
+                  margin-left: 1em !important;
+                }
+              }
+              .secure_process-container {
+                .payment_cards-container {
+                  margin-left: 1.1em ;                  
+                }  
+              }
+            }
+
+        }   
+    }
+    .step_2-group {
+      margin-top: -0.4em !important;        
+      // Make button move in right position.
+    }  
+    // Change the continue button position in 1900px.
+  }
+   @media screen and (max-width: 992px) {
+    .step_2-wrapper {   
+      .step_2-container {
+        margin-left: 0em !important;
+        .step_2-group {
+          margin-top: 2em;
+          margin-left: -50px;
+          // Make button move in right position.
+        }
+      }  
+    }
+    // Change the continue button position in 992px.
+  }
+  @media screen and (max-width: 768px) {
+    .step_2-wrapper {          
+      .step_2-container {
+        padding-top: 1em !important;
+        padding-left: 15em !important;
+        .step_2-text {
+          width: 21em !important;
+          h2 {
+            text-align: justify !important;
+          }
+        } 
+        .step_2-content {
+          .payment_container {
+            .payment_info {
+              width: 20em !important;
+              margin-left: -1em !important;
+              .secure_process-container {
+                .secure_process {
+                  // padding-right: 10em;
+                  h6 {
+                    text-align: justify !important;
+                  }
+                }
+              }
+              // .payment_cards-container {
+              //   display: block !important;
+              // }
+            }  
+          } 
+          .step_2-group {
+            margin-top: 1em;
+            margin-left: -1em;
+            // Adjust the button.        
+          } 
+        }   
+      }  
+    }
+    // Change the continue button position in 768px.
+  }
+  @media screen and (max-width: 600px) {
+    .step_2-wrapper {    
+      .step_2-container { 
+        padding-top: 1em !important;
+        padding-left: 1em !important;    
+
+      }
+    }
+    // Change the continue button position in 576px.  
+  }
+}
+@keyframes wipe-in-right {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+  // Declare @keyframes wipe in right.
+}
+}

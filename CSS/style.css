@@ -157,6 +157,10 @@ body {
     text-align: center;
     font-size: 2em;
   }
+  .body_wrapper #shopping_cart-process .shopping_process-container .step_disable .step_disable-1 .step_2-check {
+    width: 1.5em;
+    margin-top: -0.3em;
+  }
   .body_wrapper #shopping_cart-process .shopping_process-container .step_disable .step_disable-2 {
     text-align: center;
     font-size: 2em;
@@ -171,6 +175,9 @@ body {
     text-align: center;
     font-size: 2em;
     border: solid #006EAF   1px;
+  }
+  .body_wrapper #shopping_cart-process .shopping_process-container .step_disable .step_disable-1 .step_2-check {
+    margin-left: -0.1em;
   }
   .body_wrapper #shopping_cart-process .shopping_process-container .step_disable .step_disable-2 {
     text-align: center;
@@ -261,33 +268,6 @@ body {
   border: 2px solid red !important;
 }
 
-.body_wrapper #my_data .my_data-container .step_2-content .payment_info-container {
-  width: 30em;
-  border: solid #f2f2f2 1px;
-  padding: 0 auto !important;
-}
-
-.body_wrapper #my_data .my_data-container .step_2-content .payment_info-container .credit_card-block img {
-  width: 2.7em;
-}
-
-.body_wrapper #my_data .my_data-container .step_2-content .payment_info-container .credit_card-block h4 {
-  font-size: 1.2em;
-  font-weight: bolder;
-}
-
-.body_wrapper #my_data .my_data-container .step_2-content .payment_info-container .secure_process-container .secure_process-info .secure_process h6 {
-  font-size: 0.8em;
-}
-
-.body_wrapper #my_data .my_data-container .step_2-content .payment_info-container .secure_process-container .payment_cards-container .master_card-box img {
-  width: 3.5em;
-}
-
-.body_wrapper #my_data .my_data-container .step_2-content .payment_info-container .secure_process-container .payment_cards-container .visa_card-box img {
-  width: 3.5em;
-}
-
 .body_wrapper #my_data .my_data-container .continue_button-container {
   margin-right: -10em;
 }
@@ -324,30 +304,248 @@ body {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 992px) {
+  .body_wrapper .my_data-wrapper .my_data-container {
+    margin-left: 0em !important;
+  }
+  .body_wrapper .my_data-wrapper .my_data-container .continue_button-container {
+    margin-top: 1em;
+    margin-left: -50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .body_wrapper .my_data-wrapper .my_data-container .continue_button-container {
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .body_wrapper .my_data-wrapper .my_data-container .continue_button-container {
+    margin-top: 0em;
+    margin-left: 0em;
+  }
+}
+
+.body_wrapper #step_2 .step_2-container, .body_wrapper .step_2-wrapper .step_2-container {
+  width: 100vmin !important;
+  height: 50vh;
+  border-radius: 0 !important;
+  border: solid black 2px;
+  box-shadow: 1.5px 1.2px 0px 1.2px #b4b4b4;
+}
+
+.body_wrapper #step_2 .step_2-container .step_2-text h2, .body_wrapper .step_2-wrapper .step_2-container .step_2-text h2 {
+  font-size: 2.6em;
+  font-weight: bolder;
+}
+
+@font-face {
+  .body_wrapper #step_2 .step_2-container .step_2-text h2, .body_wrapper .step_2-wrapper .step_2-container .step_2-text h2 {
+    font-family: 'Helvetica';
+    src: url("../fonts/Helvetica.woff") format("woff"), url("../fonts/Helvetica.ttf") format("truetype"), url("../fonts/Helvetica.eot") format("embedded-opentype");
+  }
+}
+
+.body_wrapper #step_2 .step_2-container .step_2-text h2 .step_2-guide-text, .body_wrapper #step_2 .step_2-container .step_2-text h2 h6, .body_wrapper .step_2-wrapper .step_2-container .step_2-text h2 .step_2-guide-text, .body_wrapper .step_2-wrapper .step_2-container .step_2-text h2 h6 {
+  font-size: 200vmin;
+  padding-right: 0.8em;
+}
+
+.body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info {
+  margin-left: 9em;
+  width: 34.4em;
+  border: solid #f2f2f2 1px;
+}
+
+.body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .credit_card-block, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .credit_card-block {
+  margin-left: 2em;
+}
+
+.body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .credit_card-block .credit_card, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .credit_card-block .credit_card {
+  width: 4em;
+}
+
+.body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .credit_card-block h4, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .credit_card-block h4 {
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+
+@font-face {
+  .body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .credit_card-block h4, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .credit_card-block h4 {
+    font-family: 'Helvetica';
+    src: url("../fonts/Helvetica.woff") format("woff"), url("../fonts/Helvetica.ttf") format("truetype"), url("../fonts/Helvetica.eot") format("embedded-opentype");
+  }
+}
+
+.body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .secure_process-info .secure_process h6, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .secure_process-info .secure_process h6 {
+  font-size: 0.93em;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+@font-face {
+  .body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .secure_process-info .secure_process h6, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .secure_process-info .secure_process h6 {
+    font-family: 'Helvetica';
+    src: url("../fonts/Helvetica.woff") format("woff"), url("../fonts/Helvetica.ttf") format("truetype"), url("../fonts/Helvetica.eot") format("embedded-opentype");
+  }
+}
+
+.body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container {
+  margin-left: 2em;
+}
+
+.body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container .master_card-box img, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container .master_card-box img {
+  width: 4.2em;
+}
+
+.body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container .visa_card-box img, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container .visa_card-box img {
+  width: 4.2em;
+}
+
+.body_wrapper #step_2 .step_2-container .step_2-content .continue_button-container, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .continue_button-container {
+  margin-right: -10em;
+}
+
+.body_wrapper #step_2 .step_2-container .step_2-content .continue_button-container .continue_button-active, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .continue_button-container .continue_button-active {
+  width: 8.7em;
+  background-color: #1BA1E2;
+  color: white;
+  border: solid #006EAF 0.13em;
+  border-radius: 0.4em;
+  box-shadow: 2px 3px #b4b4b4;
+  padding-left: 1.6em;
+}
+
+.body_wrapper #step_2 .step_2-container .step_2-content .continue_button-container .continue_button-active:hover i, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .continue_button-container .continue_button-active:hover i {
+  margin-left: -0.6em;
+}
+
+.body_wrapper #step_2 .step_2-container .step_2-content .continue_button-container .continue_button-active:hover a, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .continue_button-container .continue_button-active:hover a {
+  margin-left: 0.2em;
+}
+
+.body_wrapper .step_2-group {
+  padding: 1.1em;
+}
+
+.body_wrapper .step_2-group .step_2-submit-l-container:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 1.2s;
+}
+
+.body_wrapper .step_2-group .step_2-submit-r-container:hover {
+  background-color: green;
+  color: white;
+  transition-duration: 1.2s;
+}
+
+.body_wrapper .step_2-group button {
+  width: 8em !important;
+  background-color: #1BA1E2;
+  color: white;
+  border: solid #006EAF 0.13em;
+  border-radius: 0.4em;
+  box-shadow: 2px 3px #b4b4b4;
+}
+
+.body_wrapper .step_2-group .step_2-submit-l-container {
+  height: 3em;
+  margin-left: 1em;
+}
+
+.body_wrapper .step_2-group .step_2-submit-l-container .step_2-submit-l a {
+  color: white;
+  font-size: 1.1em !important;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 0.8em;
+}
+
+.body_wrapper .step_2-group .step_2-submit-l-container .step_2-submit-l i {
+  color: white;
+}
+
+.body_wrapper .step_2-group .step_2-submit-r-container {
+  height: 3em;
+  margin-right: 4em;
+}
+
+.body_wrapper .step_2-group .step_2-submit-r-container .step_2-submit-r a {
+  color: white;
+  font-size: 1.1em !important;
+  font-weight: 400;
+  font-style: normal;
+  padding-right: 0.8em;
+}
+
+.body_wrapper .step_2-group .step_2-submit-r-container .step_2-submit-r i {
+  color: white;
+}
+
+@media screen and (max-width: 1900px) {
+  .body_wrapper .step_2-wrapper .step_2-content .payment_container {
+    margin-left: 0 !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-content .payment_container .payment_info .credit_card-block .credit_card-box {
+    margin-left: 1em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container {
+    margin-left: 1.1em;
+  }
+  .body_wrapper .step_2-wrapper .step_2-group {
+    margin-top: -0.4em !important;
+  }
+}
+
+@media screen and (max-width: 1900px) and (max-width: 992px) {
+  .body_wrapper .step_2-wrapper .step_2-container {
+    margin-left: 0em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-group {
+    margin-top: 2em;
+    margin-left: -50px;
+  }
+}
+
+@media screen and (max-width: 1900px) and (max-width: 768px) {
+  .body_wrapper .step_2-wrapper .step_2-container {
+    padding-top: 1em !important;
+    padding-left: 15em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-text {
+    width: 21em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-text h2 {
+    text-align: justify !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info {
+    width: 20em !important;
+    margin-left: -1em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .secure_process h6 {
+    text-align: justify !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-content .step_2-group {
+    margin-top: 1em;
+    margin-left: -1em;
+  }
+}
+
+@media screen and (max-width: 1900px) and (max-width: 600px) {
+  .body_wrapper .step_2-wrapper .step_2-container {
+    padding-top: 1em !important;
+    padding-left: 1em !important;
+  }
+}
+
 @keyframes wipe-in-right {
   from {
     clip-path: inset(0 100% 0 0);
   }
   to {
     clip-path: inset(0 0 0 0);
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #my_data .my_data-container .continue_button-container {
-    margin-top: 1em;
-    margin-left: -4em;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #my_data .my_data-container .continue_button-container {
-    margin-top: 1em;
-    margin-left: 0em;
-  }
-  #my_data .my_data-container .continue {
-    width: 100em;
-    z-index: 5;
-    margin-right: -5em;
   }
 }
