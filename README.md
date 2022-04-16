@@ -2,8 +2,8 @@
  E-Commerce project in steps.  
  2022/04/05 Initial commit.  
  
-----------------------------------------  
-2022/04/05  
+-------------------------------------------------------------------------------    
+2022/04/15  
 
 Make the websites, in use the GitHub  Pages.  
 The site will be in here ↓  
@@ -19,4 +19,8 @@ Add annotations.
 According the Markdown pattern in write the README.md.
 
 
-----------------------------------------
+-------------------------------------------------------------------------------    
+2022/04/16
+
+1. Do the steps_2.html, with RWD.
+2. Improve the RWD, and AOS animations.
