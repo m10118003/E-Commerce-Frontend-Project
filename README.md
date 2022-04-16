@@ -24,3 +24,14 @@ According the Markdown pattern in write the README.md.
 
 1. Do the steps_2.html, with RWD.
 2. Improve the RWD, and AOS animations.
+
+
+-------------------------------------------------------------------------------    
+2022/04/17
+1. Install npm to the project.
+2. Detect the Browser.
+3. Make a request.
+4. Initiate the order_created.html.
+
+
+-------------------------------------------------------------------------------    
