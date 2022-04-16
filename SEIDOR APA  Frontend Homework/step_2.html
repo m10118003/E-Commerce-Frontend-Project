@@ -182,7 +182,8 @@
                     </div>
                 </button>
                 <!-- Make the Pay button. -->
-                <button type="submit" class="continue_button-active step_2-submit-r-container">
+                <button type="submit" value="" onclick="userAction()"
+                    class="continue_button-active step_2-submit-r-container">
                     <div class="step_2-submit-r d-flex justify-content-end">
                         <a class="step_2-gopay-page" alt="Next step-Payment" href="./order_created.html"
                             style="text-decoration:none">Pay
@@ -193,14 +194,7 @@
             </div>
         </div>
     </main>
-    <script>
-        const request = require('request');
-        request('https://run.mocky.io/v3/5fd5b0a0-7cec-4ccf-bdec-b9c99c78e29f', function (error, response, body) {
-            console.error('error:', error); // Print the error if one occurred
-            console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-            console.log('body:', body); // Print the HTML for the Google homepage.
-        });
-    </script>
+    <script src="./JS/request_api.js"></script>
     <!-- There's no need use the color change in input border -->
     <!-- Here's require the cdn of Bootstrap for use. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -208,11 +202,13 @@
         </script>
     <!-- AOS JS. -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Sweet Alert require. -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- initiae the AOS. -->
     <script>
         AOS.init();
     </script>
-    
+
 </body>
 
 </html>
