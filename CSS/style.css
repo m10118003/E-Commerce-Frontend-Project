@@ -549,3 +549,39 @@ body {
     clip-path: inset(0 0 0 0);
   }
 }
+
+main content img {
+  margin-right: 2.49em !important;
+  width: 4.9em !important;
+}
+
+main content .order_created-font-disppear {
+  color: #ffffff;
+}
+
+main content .order_created-font-change {
+  margin-left: 4.6em;
+}
+
+main content .order_created-font-change h6 {
+  font-size: 1.04em !important;
+  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 0em !important;
+}
+
+@media screen and (max-width: 768px) {
+  main content img {
+    margin-right: 2.49em !important;
+    width: 4.9em !important;
+  }
+  main content .order_created-font-change {
+    margin-left: 4.6em;
+  }
+  main content .order_created-font-change h6 {
+    font-size: 1.04em !important;
+    font-weight: 400;
+    font-weight: 500;
+    letter-spacing: 0em !important;
+  }
+}

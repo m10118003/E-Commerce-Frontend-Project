@@ -700,7 +700,6 @@ font-style: normal;
       .step_2-container { 
         padding-top: 1em !important;
         padding-left: 1em !important;    
-
       }
     }
     // Change the continue button position in 576px.  
@@ -712,7 +711,53 @@ font-style: normal;
   }
   to {
     clip-path: inset(0 0 0 0);
+    // Declare @keyframes wipe in right.
   }
-  // Declare @keyframes wipe in right.
 }
+}
+// order_created.html, scss style.
+main {
+  content {
+    img {
+      margin-right: 2.49em !important;
+      width: 4.9em !important;      
+    }
+    .order_created-font-disppear {
+      color: #ffffff;
+      // Make the h4 font disppear.
+    }
+    .order_created-font-change {
+      margin-left: 4.6em;
+      h6 {
+        font-size: 1.04em !important;
+        font-weight: 400;
+        font-weight: 500;
+        letter-spacing: 0em !important;   
+        // Adjust the fon size.      
+      }
+    }
+
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    content {
+      img {
+        margin-right: 2.49em !important;
+        width: 4.9em !important;      
+      }
+      .order_created-font-change {
+        margin-left: 4.6em;
+        h6 {
+          font-size: 1.04em !important;
+          font-weight: 400;
+          font-weight: 500;
+          letter-spacing: 0em !important;   
+          // Adjust the fon size.      
+        }
+      }
+  
+    }
+  } 
+  // Change the order including the title, text, picture position in 768px.
 }
