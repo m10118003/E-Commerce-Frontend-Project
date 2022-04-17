@@ -101,7 +101,8 @@
                 </div>
                 <div class="step_disable d-flex flex-column align-items-center ms-lg-1">
                     <div class="step_disable-2 rounded-circle d-lg-flex justify-content-center align-items-center">
-                        2
+                        <img class="step_2-check" src="./icons/SVG/step-check.svg" alt="dropdown-marker">
+                        <!-- Make the blue rounded-circle check, and change color to green. -->
                     </div>
                     <p>Payment</p>
                 </div>
@@ -119,78 +120,43 @@
             <!-- Add AOS fade-down for <h2> and <h6>. -->
             <div class="step_2-text w-100">
                 <div class="d-md-flex justify-content-center w-100">
-                    <h2 data-aos="fade-down">Payment</h2>
-                </div>
-                <div class="d-md-flex justify-content-center mt-lg-3">
-                    <h6 data-aos="fade-down">After making the payment you will receive a confirmation email with details
-                        of your purchase</h6>
+                    <h2 data-aos="fade-down">Order Created</h2>
                 </div>
             </div>
-            <content class="step_2-content">
+            <content class="step_2-content order_created">
                 <!-- Here's start the payment info. -->
-                <div class="row payment_container mt-lg-2 ms-md-5">
-                    <!-- Use container to wrapper whole payment texts and img, icons. -->
+                <div class="row payment_container order_container mt-lg-2 ms-md-5">
+                    <!-- Use container to wrapper whole order texts and img, icons. -->
                     <!-- Add aos flip left and right effect animatios. -->
-                    <div class="col-lg-auto payment_info">
-                        <div class="credit_card-block d-md-flex justify-content-center">
-                            <div class="credit_card-box">
+                    <div class="col-lg-auto payment_info .order_created-noborder border-0">
+                        <!-- Make the border disppear. -->
+                        <div class="credit_card-block .order_created-block d-md-flex justify-content-center">
+                            <div class="credit_card-box .order_created-box">
+                                <br>
+                                <!-- Add the <br> to make the position in the right way. -->
                                 <img data-aos="flip-left" data-aos-offset="120" data-aos-delay="300"
-                                    data-aos-duration="800" class="credit_card mt-md-2 ms-md-4 mb-md-1"
-                                    src="./icons/SVG/credit-card.svg" alt="credit-card.">
-                                <!-- Credit-card svg insert. -->
-                                <h4 data-aos="flip-right" data-aos-offset="120" data-aos-delay="400"
-                                    data-aos-duration="800">Credit Card</h4>
+                                    data-aos-duration="800" class="credit_card order_created-order mt-md-2 ms-md-4 mb-md-1"
+                                    src="./icons/SVG/order.svg" alt="order_created-svg.">                                    
+                                <!-- order svg insert, change the alternative text. -->
+                                <br><br>
                                 <!-- Credit-card texts. -->
                             </div>
                         </div>
-                        <!-- Here's the info of secure_process and payment cards.  -->
+                        <!-- Here's the info of order confirm text.  -->
                         <div class="secure_process-container">
-                            <div class="secure_process-info d-md-flex p-md-2">
-                                <div class="secure_process">
-                                    <h6>You will be redirected to a secure payment platform. This is a secure process.
-                                        The validation of your payment can take up to 24 hours.</h6>
-                                </div>
-                            </div>
-                            <!-- Add aos fade-in effect animations. -->
-                            <div class="payment_cards-container d-flex justify-content-center pb-md-4">
-                                <div data-aos="fade-in" data-aos-offset="120" data-aos-delay="300"
-                                    data-aos-duration="800" class="master_card-box d-md-flex me-md-2">
-                                    <img src="./img/master-card.jpg" alt="master-card.">
-                                    <!-- Insert the master card ipg. -->
-                                </div>
-                                <div data-aos="fade-in" data-aos-offset="120" data-aos-delay="400"
-                                    data-aos-duration="800" class="visa_card-box d-md-flex ms-md-2">
-                                    <img src="./img/visa-card.jpg" alt="visa-card.">
-                                    <!-- Insert the visa card ipg. -->
+                            <div class="secure_process-info order_created-font-info d-md-flex p-md-2">
+                                <div class="secure_process order_created-font-change"> 
+                                    <h6>Congratulations, your payment was successful.<br> Shortly a confirmation email will arrive to your inbox.</h6>
+                                    <!-- Make the h6 change to the next row -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </content>
-            <!-- The button can guide the customer to the paymeny page or go back. -->
-            <!-- The structure is different to the index.html -->
-            <div class="step_2-group continue_button-container d-md-flex justify-content-md-around mt-lg-4">
-                <!-- Make the Backward button. -->
-                <button type="submit" class="continue_button-active step_2-submit-l-container">
-                    <div class="step_2-submit-l d-flex justify-content-start">
-                        <i class="step_2-left-arrow bi bi-chevron-left align-content-start">
-                            <a class="step_2-goback_page" alt="Next step-Payment" href="./index.html"
-                                style="text-decoration:none">Back
-                            </a>
-                        </i>
-                    </div>
-                </button>
-                <!-- Make the Pay button. -->
-                <button type="submit" class="continue_button-active step_2-submit-r-container">
-                    <div class="step_2-submit-r d-flex justify-content-end">
-                        <a class="step_2-gopay-page" alt="Next step-Payment" href="./order_created.html"
-                            style="text-decoration:none">Pay
-                        </a>
-                        <i class="step_2-right-arrow bi bi-chevron-right"></i>
-                    </div>
-                </button>
-            </div>
+            <!-- The button is remove in order_created.html. -->
+            <!-- The structure is different to the index.html and step_2.html. -->
+
         </div>
     </main>
     <!-- There's no need use the color change in input border -->
