@@ -30,7 +30,7 @@ Change the syle, and add some animations.
   
 -------------------------------------------------------------------------------   
 2022/04/17  
-
+  
 Make the api request.  
 1. Install npm to the project.  
 2. Detect the Browser.  
@@ -41,20 +41,28 @@ Make the api request.
 ------------------------------------------------------------------------------- 
 2022/04/17  
   
-Make the JS module file.
-1. Make the JS module file.  
-2. Create the test js files, and request api connect.  
+Make the JS module file.  
+1. Make the JS module file.    
+2. Create the test js files, and request api connect.   
 3. Add sweet alert.js.  
 4. Change styles, button, attributes.  
   
   
 ------------------------------------------------------------------------------- 
 2022/04/17  
-
+  
 Finish the website.  
 1. Make the order_created.html.  
 2. Change the scss style, quickly.  
 3. Change the request_api.js.     
   
+  
+------------------------------------------------------------------------------- 
+2022/04/17   
+  
+Test the problems.  
+1. Change the RWD in order_created.html.  
+2. Remove the sweet alert.  
+3. Improve some display problems.  
   
 ------------------------------------------------------------------------------- 

@@ -1,7 +1,8 @@
 const request = new XMLHttpRequest()
 
 function userAction() {
-    swal('To confirm payment, please press the button again!')
+    // alert('To confirm payment, please press the button again!')
+    // The alert for test.
     fetch('https://run.mocky.io/v3/5fd5b0a0-7cec-4ccf-bdec-b9c99c78e29f')
         .then (function (error, response, body) {
             return response.json()

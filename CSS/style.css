@@ -566,22 +566,29 @@ main content .order_created-font-change {
 main content .order_created-font-change h6 {
   font-size: 1.04em !important;
   font-weight: 400;
-  font-weight: 500;
   letter-spacing: 0em !important;
 }
 
+@media screen and (max-width: 992px) {
+  section .shopping_process-container .order_created-check {
+    width: 1.5em;
+    margin-top: -0.3em;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  section .shopping_process-container .order_created-check {
+    margin-left: -0.1em;
+  }
   main content img {
-    margin-right: 2.49em !important;
-    width: 4.9em !important;
+    margin-left: 5em !important;
   }
   main content .order_created-font-change {
-    margin-left: 4.6em;
+    margin-left: 3.6em;
   }
   main content .order_created-font-change h6 {
     font-size: 1.04em !important;
     font-weight: 400;
-    font-weight: 500;
     letter-spacing: 0em !important;
   }
 }
