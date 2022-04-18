@@ -74,3 +74,15 @@ Change the RWD, and input.
 3. Change the style.  
  
 -------------------------------------------------------------------------------
+2022/04/18   
+  
+Edited the pages.  
+1. Change all the pages.  
+2. Fix the RWD problems.  
+3. Make the input attributes smoothly.  
+4. CSS style improve.  
+5. Remove the go next page test, added to the JS files.  
+
+
+-------------------------------------------------------------------------------
+6. Finished.
