@@ -390,7 +390,7 @@ body {
 
 .body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .credit_card-block, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .credit_card-block {
   margin-top: -0.1em;
-  margin-left: 2em;
+  margin-left: 1em;
   padding-bottom: 0.7em;
 }
 
@@ -460,6 +460,7 @@ body {
 }
 
 .body_wrapper .step_2-group {
+  margin-top: -0.6em !important;
   padding: 1.8em 1.1em;
 }
 
@@ -489,7 +490,7 @@ body {
 .body_wrapper .step_2-group .step_2-submit-l-container {
   width: 8.2em !important;
   height: 3.2em !important;
-  margin-left: 1em;
+  margin-left: 5em;
 }
 
 .body_wrapper .step_2-group .step_2-submit-l-container .step_2-submit-l a {
@@ -507,7 +508,7 @@ body {
 .body_wrapper .step_2-group .step_2-submit-r-container {
   width: 9em !important;
   height: 3.2em !important;
-  margin-right: 4em;
+  margin-right: 5em;
 }
 
 .body_wrapper .step_2-group .step_2-submit-r-container .step_2-submit-r a {
@@ -576,14 +577,14 @@ body {
     text-align: justify !important;
   }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .payment_cards-container {
-    margin-left: -12.5em;
+    margin-left: -3em;
   }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .payment_cards-container .card-box .visa_card {
     margin-left: 0em !important;
   }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-group {
     margin-top: 1em;
-    margin-left: -10em !important;
+    margin-left: -12em !important;
   }
 }
 
@@ -603,23 +604,23 @@ body {
     margin-left: -1em !important;
   }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .credit_card-block {
-    margin-left: 1.5em !important;
+    margin-left: 6em !important;
   }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .credit_card-block h4 {
-    margin-left: 2.5em;
+    margin-left: -1em;
   }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .secure_process h6 {
     text-align: justify !important;
   }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .payment_cards-container {
-    margin-left: -12.5em;
+    margin-left: -3.5em;
   }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .payment_cards-container .card-box .visa_card {
     margin-left: 0em !important;
   }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-group {
     margin-top: 1em;
-    margin-left: 0em !important;
+    margin-left: -2.5em !important;
   }
 }
 
@@ -634,7 +635,9 @@ body {
   }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-group {
     margin-top: 1em;
-    margin-left: 1em !important;
+    margin-left: -1em !important;
+    padding-right: 1em;
+    padding-left: 0em !important;
   }
 }
 
@@ -651,14 +654,16 @@ body {
     padding-left: 8em !important;
   }
   .body_wrapper .step_2-wrapper .step_2-container .payment_cards-container .card-box {
-    margin-left: 20em !important;
+    margin-left: 11em !important;
   }
   .body_wrapper .step_2-wrapper .step_2-container .payment_cards-container .card-box .misa_card {
     margin-left: 0em !important;
   }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-group {
     margin-top: 1em;
-    margin-left: 1em !important;
+    margin-left: -1em !important;
+    padding-right: 1em;
+    padding-left: 0em !important;
   }
 }
 
@@ -675,14 +680,16 @@ body {
     padding-left: 2em !important;
   }
   .body_wrapper .step_2-wrapper .step_2-container .payment_cards-container .card-box {
-    margin-left: 20em !important;
+    margin-left: 11em !important;
   }
   .body_wrapper .step_2-wrapper .step_2-container .payment_cards-container .card-box .misa_card {
     margin-left: 0em !important;
   }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-group {
     margin-top: 1em;
-    margin-left: 1em !important;
+    margin-left: -1em !important;
+    padding-right: 1em;
+    padding-left: 0em !important;
   }
 }
 
