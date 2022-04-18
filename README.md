@@ -64,5 +64,13 @@ Test the problems.
 1. Change the RWD in order_created.html.  
 2. Remove the sweet alert.  
 3. Improve some display problems.  
-  
+   
 ------------------------------------------------------------------------------- 
+2022/04/17    
+  
+Change the RWD, and input.  
+1. Adjust the RWS of step_2.html.  
+2. Make the input check.  
+3. Change the style.  
+ 
+-------------------------------------------------------------------------------

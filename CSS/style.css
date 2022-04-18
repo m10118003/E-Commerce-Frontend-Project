@@ -19,6 +19,10 @@ body {
   background-color: #f0f0f0 !important;
 }
 
+.body_wrapper .nav_container .nav-pills {
+  margin-right: -1.3em;
+}
+
 .body_wrapper .nav_container .nav-pills .help_block {
   width: auto;
 }
@@ -189,14 +193,19 @@ body {
   }
 }
 
+.body_wrapper #my_data {
+  margin-top: -2em;
+}
+
 .body_wrapper #my_data .my_data-container {
-  width: 100vmin !important;
+  width: 86vmin !important;
   border-radius: 0 !important;
   border: solid black 2px;
   box-shadow: 1.5px 1.2px 0px 1.2px #b4b4b4;
 }
 
 .body_wrapper #my_data .my_data-container .login_guide-text h2 {
+  margin-top: -0.5em;
   font-weight: bolder;
 }
 
@@ -209,15 +218,15 @@ body {
 
 .body_wrapper #my_data .my_data-container .login_guide-text .login_guide-text, .body_wrapper #my_data .my_data-container .login_guide-text h6 {
   font-size: xx-small;
-  padding-right: 0.8em;
+  padding-right: 1.4em;
 }
 
 .body_wrapper #my_data .my_data-container .name_input-container {
-  padding-right: 4.3em;
+  padding-right: 3.3em;
 }
 
 .body_wrapper #my_data .my_data-container .name_input-container .given_name-block .given_name p {
-  font-size: smaller;
+  font-size: x-small;
 }
 
 @font-face {
@@ -228,8 +237,8 @@ body {
 }
 
 .body_wrapper #my_data .my_data-container .name_input-container .given_name-block .given_name input {
-  width: 19.5em !important;
-  height: 2.4em;
+  width: 25.8em !important;
+  height: 3.1em;
   border: solid #1BA1E2 0.2em !important;
   margin-top: -1.3em;
 }
@@ -243,7 +252,7 @@ body {
 }
 
 .body_wrapper #my_data .my_data-container .name_input-container .family_name-block .family_name p {
-  font-size: smaller;
+  font-size: x-small;
 }
 
 @font-face {
@@ -254,8 +263,8 @@ body {
 }
 
 .body_wrapper #my_data .my_data-container .name_input-container .family_name-block .family_name input {
-  width: 19.5em !important;
-  height: 2.4em;
+  width: 25.8em !important;
+  height: 3.1em;
   border: solid #1BA1E2 0.2em !important;
   margin-top: -1.3em;
 }
@@ -274,39 +283,27 @@ body {
 
 .body_wrapper #my_data .my_data-container .continue_button-container .continue_button-active {
   width: 8.7em;
+  height: 2.1em;
   background-color: #1BA1E2;
   color: white;
   border: solid #006EAF 0.13em;
   border-radius: 0.4em;
   box-shadow: 2px 3px #b4b4b4;
+  margin-top: 0.5em;
+  padding-top: -2em;
   padding-left: 1.6em;
 }
 
-.body_wrapper #my_data .my_data-container .continue_button-container .continue_button-active:hover i {
-  margin-left: -0.6em;
-}
-
-.body_wrapper #my_data .my_data-container .continue_button-container .continue_button-active:hover a {
-  margin-left: 0.2em;
-}
-
-.body_wrapper #my_data .my_data-container .continue_button-container .continue_button-active a {
-  display: inline-block;
-  color: white;
-  font-size: 6px;
-  margin-left: -2em;
-  padding: 1.1em 1em;
-  transition: 0.3s;
-}
-
-.body_wrapper #my_data .my_data-container .continue_button-container .continue_button-active i {
-  padding-right: 0.2em;
-  transition: 0.5s;
+.body_wrapper #my_data .my_data-container img {
+  margin-top: 1em;
+  margin-left: -1.3em;
+  width: 0.6em;
 }
 
 @media screen and (max-width: 992px) {
-  .body_wrapper .my_data-wrapper .my_data-container {
+  .body_wrapper .my_data-wrapper {
     margin-left: 0em !important;
+    padding: 0 55px !important;
   }
   .body_wrapper .my_data-wrapper .my_data-container .continue_button-container {
     margin-top: 1em;
@@ -322,23 +319,54 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  .body_wrapper .my_data-wrapper {
+    margin-top: 2em !important;
+    padding: 0 40px !important;
+  }
+  .body_wrapper .my_data-wrapper .my_data-container h2 {
+    padding-top: 1em;
+  }
   .body_wrapper .my_data-wrapper .my_data-container .continue_button-container {
     margin-top: 0em;
     margin-left: 0em;
+    padding-bottom: 1em;
   }
 }
 
+@media screen and (max-width: 425px) {
+  .body_wrapper header .language_choice {
+    margin-right: -5em !important;
+  }
+  .body_wrapper .my_data-wrapper {
+    margin-top: 2em !important;
+    padding: 0 40px !important;
+  }
+  .body_wrapper .my_data-wrapper .my_data-container h2 {
+    padding-top: 1em;
+  }
+  .body_wrapper .my_data-wrapper .my_data-container .continue_button-container {
+    margin-top: 0em;
+    margin-left: 0em;
+    padding-bottom: 1em;
+  }
+}
+
+.body_wrapper #step_2, .body_wrapper .step_2-wrapper {
+  margin-top: -2em;
+}
+
 .body_wrapper #step_2 .step_2-container, .body_wrapper .step_2-wrapper .step_2-container {
-  width: 100vmin !important;
-  height: 50vh;
+  width: 86vmin !important;
+  height: 42.4vh;
   border-radius: 0 !important;
   border: solid black 2px;
   box-shadow: 1.5px 1.2px 0px 1.2px #b4b4b4;
 }
 
 .body_wrapper #step_2 .step_2-container .step_2-text h2, .body_wrapper .step_2-wrapper .step_2-container .step_2-text h2 {
-  font-size: 2.6em;
+  font-size: 2.1em;
   font-weight: bolder;
+  margin-top: -0.2em;
 }
 
 @font-face {
@@ -348,27 +376,30 @@ body {
   }
 }
 
-.body_wrapper #step_2 .step_2-container .step_2-text h2 .step_2-guide-text, .body_wrapper #step_2 .step_2-container .step_2-text h2 h6, .body_wrapper .step_2-wrapper .step_2-container .step_2-text h2 .step_2-guide-text, .body_wrapper .step_2-wrapper .step_2-container .step_2-text h2 h6 {
-  font-size: 200vmin;
+.body_wrapper #step_2 .step_2-container .step_2-text h6, .body_wrapper .step_2-wrapper .step_2-container .step_2-text h6 {
+  font-size: 0.8em;
+  padding-top: 0.8em;
   padding-right: 0.8em;
 }
 
 .body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info {
   margin-left: 9em;
-  width: 34.4em;
+  width: 27em;
   border: solid #f2f2f2 1px;
 }
 
 .body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .credit_card-block, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .credit_card-block {
+  margin-top: -0.1em;
   margin-left: 2em;
+  padding-bottom: 0.7em;
 }
 
 .body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .credit_card-block .credit_card, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .credit_card-block .credit_card {
-  width: 4em;
+  width: 4.6vmin !important;
 }
 
 .body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .credit_card-block h4, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .credit_card-block h4 {
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-weight: bolder;
 }
 
@@ -380,8 +411,8 @@ body {
 }
 
 .body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .secure_process-info .secure_process h6, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .secure_process-info .secure_process h6 {
-  font-size: 0.93em;
-  letter-spacing: 0.08em;
+  font-size: 0.8em !important;
+  letter-spacing: 0.1px;
   text-align: center;
 }
 
@@ -392,16 +423,18 @@ body {
   }
 }
 
-.body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container {
-  margin-left: 2em;
+.body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container .card-box, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container .card-box {
+  margin: 0 36%;
 }
 
-.body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container .master_card-box img, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container .master_card-box img {
-  width: 4.2em;
+.body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container .card-box img, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container .card-box img {
+  width: 3.4em !important;
+  height: 2.1em !important;
+  margin-right: 2.49em !important;
 }
 
-.body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container .visa_card-box img, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container .visa_card-box img {
-  width: 4.2em;
+.body_wrapper #step_2 .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container .card-box .visa_card, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container .card-box .visa_card {
+  margin-left: -1.8em;
 }
 
 .body_wrapper #step_2 .step_2-container .step_2-content .continue_button-container, .body_wrapper .step_2-wrapper .step_2-container .step_2-content .continue_button-container {
@@ -427,7 +460,7 @@ body {
 }
 
 .body_wrapper .step_2-group {
-  padding: 1.1em;
+  padding: 1.8em 1.1em;
 }
 
 .body_wrapper .step_2-group .step_2-submit-l-container:hover {
@@ -443,16 +476,19 @@ body {
 }
 
 .body_wrapper .step_2-group button {
-  width: 8em !important;
   background-color: #1BA1E2;
   color: white;
   border: solid #006EAF 0.13em;
   border-radius: 0.4em;
   box-shadow: 2px 3px #b4b4b4;
+  font-size: 0.75em;
+  font-weight: 400;
+  text-align: center;
 }
 
 .body_wrapper .step_2-group .step_2-submit-l-container {
-  height: 3em;
+  width: 8.2em !important;
+  height: 3.2em !important;
   margin-left: 1em;
 }
 
@@ -469,7 +505,8 @@ body {
 }
 
 .body_wrapper .step_2-group .step_2-submit-r-container {
-  height: 3em;
+  width: 9em !important;
+  height: 3.2em !important;
   margin-right: 4em;
 }
 
@@ -492,28 +529,32 @@ body {
   .body_wrapper .step_2-wrapper .step_2-content .payment_container .payment_info .credit_card-block .credit_card-box {
     margin-left: 1em !important;
   }
+  .body_wrapper .step_2-wrapper .step_2-content .payment_container .payment_info .secure_process-container {
+    margin-top: -0.5em;
+  }
   .body_wrapper .step_2-wrapper .step_2-content .payment_container .payment_info .secure_process-container .payment_cards-container {
     margin-left: 1.1em;
   }
   .body_wrapper .step_2-wrapper .step_2-group {
-    margin-top: -0.4em !important;
+    margin-top: -0.9em !important;
   }
 }
 
 @media screen and (max-width: 1900px) and (max-width: 992px) {
-  .body_wrapper .step_2-wrapper .step_2-container {
+  .body_wrapper .step_2-wrapper {
     margin-left: 0em !important;
+    padding: 0 55px !important;
   }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-group {
     margin-top: 2em;
-    margin-left: -50px;
+    margin-left: 0;
   }
 }
 
 @media screen and (max-width: 1900px) and (max-width: 768px) {
   .body_wrapper .step_2-wrapper .step_2-container {
     padding-top: 1em !important;
-    padding-left: 15em !important;
+    padding-left: 12.5em !important;
   }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-text {
     width: 21em !important;
@@ -525,19 +566,123 @@ body {
     width: 20em !important;
     margin-left: -1em !important;
   }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .credit_card-block {
+    margin-left: 0em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .credit_card-block h4 {
+    margin-left: 0em;
+  }
   .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .secure_process h6 {
     text-align: justify !important;
   }
-  .body_wrapper .step_2-wrapper .step_2-container .step_2-content .step_2-group {
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .payment_cards-container {
+    margin-left: -12.5em;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .payment_cards-container .card-box .visa_card {
+    margin-left: 0em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-group {
     margin-top: 1em;
-    margin-left: -1em;
+    margin-left: -10em !important;
   }
 }
 
-@media screen and (max-width: 1900px) and (max-width: 600px) {
+@media screen and (max-width: 1900px) and (max-width: 767px) {
   .body_wrapper .step_2-wrapper .step_2-container {
     padding-top: 1em !important;
-    padding-left: 1em !important;
+    padding-left: 12.5em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-text {
+    width: 21em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-text h2 {
+    text-align: justify !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info {
+    width: 20em !important;
+    margin-left: -1em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .credit_card-block {
+    margin-left: 1.5em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .credit_card-block h4 {
+    margin-left: 2.5em;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .secure_process-container .secure_process h6 {
+    text-align: justify !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .payment_cards-container {
+    margin-left: -12.5em;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-content .payment_container .payment_info .payment_cards-container .card-box .visa_card {
+    margin-left: 0em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-group {
+    margin-top: 1em;
+    margin-left: 0em !important;
+  }
+}
+
+@media screen and (max-width: 1900px) and (max-width: 576px) {
+  .body_wrapper .step_2-wrapper {
+    margin-left: -1em !important;
+    padding: 1em -5em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container {
+    padding-top: 1em !important;
+    padding-left: 8em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-group {
+    margin-top: 1em;
+    margin-left: 1em !important;
+  }
+}
+
+@media screen and (max-width: 1900px) and (max-width: 575px) {
+  .body_wrapper #shopping_cart-process {
+    margin-bottom: 2em !important;
+  }
+  .body_wrapper .step_2-wrapper {
+    margin-left: -1em !important;
+    padding: 1em -5em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container {
+    padding-top: 1em !important;
+    padding-left: 8em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .payment_cards-container .card-box {
+    margin-left: 20em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .payment_cards-container .card-box .misa_card {
+    margin-left: 0em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-group {
+    margin-top: 1em;
+    margin-left: 1em !important;
+  }
+}
+
+@media screen and (max-width: 1900px) and (max-width: 500px) {
+  .body_wrapper #shopping_cart-process {
+    margin-bottom: 2em !important;
+  }
+  .body_wrapper .step_2-wrapper {
+    margin-left: -1em !important;
+    padding: 1em -5em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container {
+    padding-top: 1em !important;
+    padding-left: 2em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .payment_cards-container .card-box {
+    margin-left: 20em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .payment_cards-container .card-box .misa_card {
+    margin-left: 0em !important;
+  }
+  .body_wrapper .step_2-wrapper .step_2-container .step_2-group {
+    margin-top: 1em;
+    margin-left: 1em !important;
   }
 }
 
@@ -550,21 +695,18 @@ body {
   }
 }
 
-main content img {
-  margin-right: 2.49em !important;
-  width: 4.9em !important;
+.order_created-wrapper .order_created .order_created-order {
+  margin-left: 1.5em !important;
+  width: 6.7vmin !important;
 }
 
-main content .order_created-font-disppear {
-  color: #ffffff;
+.order_created-wrapper .order_created .order_created-font-change {
+  margin-top: 0.5em;
+  margin-left: 2.8em;
 }
 
-main content .order_created-font-change {
-  margin-left: 4.6em;
-}
-
-main content .order_created-font-change h6 {
-  font-size: 1.04em !important;
+.order_created-wrapper .order_created .order_created-font-change h6 {
+  font-size: 0.75em !important;
   font-weight: 400;
   letter-spacing: 0em !important;
 }
@@ -580,15 +722,19 @@ main content .order_created-font-change h6 {
   section .shopping_process-container .order_created-check {
     margin-left: -0.1em;
   }
-  main content img {
-    margin-left: 5em !important;
-  }
-  main content .order_created-font-change {
-    margin-left: 3.6em;
-  }
-  main content .order_created-font-change h6 {
-    font-size: 1.04em !important;
-    font-weight: 400;
+  .order_created-wrapper .order_created .order_created-font-change h6 {
     letter-spacing: 0em !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section .shopping_process-container .order_created-check {
+    margin-left: -0.1em;
+  }
+  .order_created-wrapper .order_created .order_created-order {
+    margin-left: 3em !important;
+  }
+  .order_created-wrapper .order_created .order_created-font-change h6 {
+    letter-spacing: 0.07em !important;
   }
 }

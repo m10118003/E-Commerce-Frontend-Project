@@ -26,9 +26,9 @@
 
 <body class="body_wrapper bg-light">
     <!-- From now on, using the d-lg-flex for RWD, make the layout changes at 960px -->
-    <header id="header" class="d-lg-flex flex-row-reverse">
+    <header id="header" class="d-lg-flex flex-row-reverse justify-content-md-start w-75 ms-lg-5">
         <!-- There is no logo. -->
-        <div class="nav_container mt-lg-4 me-lg-4">
+        <div class="nav_container mt-lg-4 ps-lg-5">
             <!-- Here start the navigation bar of Bootstrap v5.1 in use.  -->
             <ul class="nav nav-pills">
                 <!-- Here's the icon HELP and describe text of icons. -->
@@ -84,7 +84,7 @@
 
     <!-- The shopping-process, is from My Data to Payment. -->
     <!-- Require the transition.css, and usage of animation. -->
-    <section id="shopping_cart-process" class="pb-lg-2 mt-lg-4" transition-style="in:wipe:right">
+    <section id="shopping_cart-process" class="pb-lg-0 mt-lg-4" transition-style="in:wipe:right">
         <!-- Also use the Bootstrap kit for the RWD and process flowchart  of buying. -->
         <div class="shopping_process-container row w-100">
             <!-- Use the Bootstrap for the progress content text to the center, and RWD. -->
@@ -101,7 +101,8 @@
                 </div>
                 <div class="step_disable d-flex flex-column align-items-center ms-lg-1">
                     <div class="step_disable-2 rounded-circle d-lg-flex justify-content-center align-items-center">
-                        <img class="step_2-check order_created-check" src="./icons/SVG/step-check.svg" alt="dropdown-marker">
+                        <img class="step_2-check order_created-check" src="./icons/SVG/step-check.svg"
+                            alt="dropdown-marker">
                         <!-- Make the blue rounded-circle check, and change color to green. -->
                     </div>
                     <p>Payment</p>
@@ -113,9 +114,10 @@
     <!-- Payment info -->
     <!-- Use the Bootstrap for the Payment info, and RWD. -->
     <!-- Use AOS fade up effect. -->
-    <main id="step_2" class="step_2-wrapper d-lg-flex justify-content-center mb-lg-5" data-aos="fade-up">
+    <main id="step_2" class="step_2-wrapper order_created-wrapper d-lg-flex justify-content-center mb-lg-5"
+        data-aos="fade-up">
         <!-- The my_data-container. -->
-        <div class="step_2-container w-85 p-sm-5 m-sm-5 bg-white rounded">
+        <div class="step_2-container w-75 p-sm-5 mt-sm-5 mb-sm-5 bg-white rounded">
             <!-- login_guide-text for the Payment and After making the... -->
             <!-- Add AOS fade-down for <h2> and <h6>. -->
             <div class="step_2-text w-100">
@@ -130,23 +132,22 @@
                     <!-- Add aos flip left and right effect animatios. -->
                     <div class="col-lg-auto payment_info .order_created-noborder border-0">
                         <!-- Make the border disppear. -->
-                        <div class="credit_card-block .order_created-block d-md-flex justify-content-center">
-                            <div class="credit_card-box .order_created-box">
-                                <br>
-                                <!-- Add the <br> to make the position in the right way. -->
-                                <img data-aos="flip-left" data-aos-offset="120" data-aos-delay="300"
-                                    data-aos-duration="800" class="credit_card order_created-order mt-md-2 ms-md-4 mb-md-1"
-                                    src="./icons/SVG/order.svg" alt="order_created-svg.">                                    
-                                <!-- order svg insert, change the alternative text. -->
-                                <br><br>
-                                <!-- Credit-card texts. -->
-                            </div>
+                        <div class="order_created-block d-md-flex justify-content-center mb-3">
+                            <!-- Add the <br> to make the position in the right way. -->
+                            <img data-aos="flip-left" data-aos-offset="120" data-aos-delay="300" data-aos-duration="800"
+                                class="credit_card order_created-order mt-md-2 ms-md-4 mb-md-1"
+                                src="./icons/SVG/order.svg" alt="order_created-svg.">
+                            <!-- order svg insert, change the alternative text. -->
+                            <!-- Credit-card texts. -->
+
                         </div>
                         <!-- Here's the info of order confirm text.  -->
                         <div class="secure_process-container">
+                            <!-- Use the same style -->
                             <div class="secure_process-info order_created-font-info d-md-flex p-md-2">
-                                <div class="secure_process order_created-font-change"> 
-                                    <h6>Congratulations, your payment was successful.<br> Shortly a confirmation email will arrive to your inbox.</h6>
+                                <div class="secure_process order_created-font-change">
+                                    <h6>Congratulations, your payment was successful.<br> Shortly a confirmation email
+                                        will arrive to your inbox.</h6>
                                     <!-- Make the h6 change to the next row -->
                                 </div>
                             </div>
@@ -156,9 +157,9 @@
             </content>
             <!-- The button is remove in order_created.html. -->
             <!-- The structure is different to the index.html and step_2.html. -->
-
         </div>
     </main>
+
     <!-- There's no need use the color change in input border -->
     <!-- Here's require the cdn of Bootstrap for use. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -170,7 +171,7 @@
     <script>
         AOS.init();
     </script>
-    
+
 </body>
 
 </html>
